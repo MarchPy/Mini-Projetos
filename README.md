@@ -23,18 +23,18 @@ Cada pasta é um projeto independente, com seu próprio código e dependências.
 ```
 .
 ├── README.md
-├── editor-de-texto/
+├── Editor-de-texto/
 │   ├── Editor.exe
 │   ├── README.md
 │   └── src/
 │       └── text_edit.py
-├── gerador-de-senhas/
+├── Gerador-de-senhas-GUI/
 │   ├── Gerador de senhas.exe
 │   ├── README.md
 │   ├── run.sh
 │   └── src/
 │       └── genpw.py
-├── xencryptpy/
+├── XEncryptPy/
 │   ├── README.md
 │   ├── requirements.txt
 │   ├── XEncryptPy.py
@@ -46,14 +46,14 @@ Cada pasta é um projeto independente, com seu próprio código e dependências.
 │   │   └── TopFrame.py
 │   └── Images/
 │       └── icone.png
-├── hash-checker/
+├── SHA-and-MD5-checker/
 │   ├── Hash Checker.py
 │   ├── README.md
 │   ├── requirements.txt
 │   └── images/
 │       ├── files.ico
 │       └── icone.png
-└── brutehash/
+└── BruteHash/
     ├── BruteHash.go
     ├── README.md
     ├── go.mod
@@ -106,7 +106,7 @@ Gera senhas de 4, 6, 8 e 12 dígitos, com opção de letras maiúsculas, minúsc
 **Como usar:**
 ```bash
 cd gerador-de-senhas
-./run.sh      
+python3 genpw.py 
 ```
 
 ---
@@ -156,16 +156,15 @@ Ferramenta de linha de comando em Go para identificação e quebra de hashes (MD
 **Como usar:**
 ```bash
 cd BruteHash
-go build -o brutehash
 
 # Quebra por wordlist
-./brutehash bruteforce1 -w wordlist.txt -t <hash> --type sha256
+./BruteHash.go bruteforce1 -w wordlist.txt -t <hash> --type sha256
 
 # Quebra por força bruta
-./brutehash bruteforce2 -t <hash> --type sha256 --min 5 --max 10
+./BruteHash.go bruteforce2 -t <hash> --type sha256 --min 5 --max 10
 
 # Identificar tipo de hash
-./brutehash identifier -t <hash>
+./BruteHash.go identifier -t <hash>
 ```
 
 ---
