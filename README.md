@@ -10,13 +10,13 @@ Cada pasta é um projeto independente, com seu próprio código e dependências.
 
 ## 📂 Projetos
 
-| Projeto | Linguagem | Descrição |
-|---|---|---|
-| [`editor-de-texto/`](#-editor-de-texto) | Python | Editor de texto leve e portátil |
-| [`gerador-de-senhas/`](#-gerador-de-senhas) | Python | Gerador de senhas com interface gráfica |
-| [`xencryptpy/`](#-xencryptpy) | Python | Criptografia simétrica de arquivos |
-| [`hash-checker/`](#-hash-checker) | Python | Verificador de hashes MD5 / SHA256 / SHA512 |
-| [`brutehash/`](#-brutehash) | Go | CLI para identificação e quebra de hashes |
+| Projeto                                    | Linguagem | Descrição                                 |
+| ------------------------------------------ | --------- | ------------------------------------------- |
+| [`editor-de-texto/`](#-editor-de-texto)     | Python    | Editor de texto leve e portátil            |
+| [`gerador-de-senhas/`](#-gerador-de-senhas) | Python    | Gerador de senhas com interface gráfica    |
+| [`xencryptpy/`](#-xencryptpy)               | Python    | Criptografia simétrica de arquivos         |
+| [`hash-checker/`](#-hash-checker)           | Python    | Verificador de hashes MD5 / SHA256 / SHA512 |
+| [`brutehash/`](#-brutehash)                 | Go        | CLI para identificação e quebra de hashes |
 
 ## 📁 Estrutura do repositório
 
@@ -89,7 +89,9 @@ Editor de texto simples e portátil — abra, escreva e salve arquivos em qualqu
 **Tecnologia:** Tkinter
 
 **Como usar:**
+
 - No linux:
+
 ```bash
   cd Editor-de-Texto
   $ python3 text_edit.py
@@ -104,6 +106,7 @@ Gera senhas de 4, 6, 8 e 12 dígitos, com opção de letras maiúsculas, minúsc
 **Tecnologia:** Tkinter
 
 **Como usar:**
+
 ```bash
 cd gerador-de-senhas
 python3 genpw.py 
@@ -118,6 +121,7 @@ Criptografa e descriptografa arquivos usando criptografia simétrica (Fernet, da
 **Tecnologia:** Tkinter, cryptography
 
 **Como usar:**
+
 ```bash
 cd xencryptpy
 pip install -r requirements.txt
@@ -135,6 +139,7 @@ Calcula os hashes MD5, SHA256 e SHA512 de qualquer arquivo selecionado pelo usu�
 **Tecnologia:** Tkinter, Pandas, Hashlib
 
 **Como usar:**
+
 ```bash
 cd SHA-and-MD5-checker
 pip install -r requirements.txt
@@ -154,6 +159,7 @@ Ferramenta de linha de comando em Go para identificação e quebra de hashes (MD
 **Tecnologia:** Go, urfave/cli
 
 **Como usar:**
+
 ```bash
 cd BruteHash
 
@@ -168,10 +174,6 @@ cd BruteHash
 ```
 
 ---
-
-## 📄 Licença
-
-Este repositório ainda não possui uma licença definida. Recomendado adicionar uma (ex: MIT) para deixar claro o uso permitido do código.
 
 ## 👤 Autor
 
